@@ -1,4 +1,4 @@
-# Cucumber-Java Skeleton
+# FB QA Automation based on Cucumber-Java Skeleton project
 
 [![Build Status](https://travis-ci.org/cucumber/cucumber-java-skeleton.svg?branch=master)](https://travis-ci.org/cucumber/cucumber-java-skeleton)
 
