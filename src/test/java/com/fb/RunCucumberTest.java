@@ -1,4 +1,4 @@
-package io.cucumber.skeleton;
+package com.fb;
 
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;

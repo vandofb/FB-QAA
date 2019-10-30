@@ -1,4 +1,4 @@
-package io.cucumber.skeleton;
+package com.fb;
 
 import com.fb.Page;
 import io.cucumber.java.en.Given;
