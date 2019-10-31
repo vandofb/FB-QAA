@@ -1,4 +1,4 @@
-Feature: FB App Retail (TBD)
+Feature: FB App Healthcare (TBD)
 
   Scenario: scenario 1
     Given I open FB App
