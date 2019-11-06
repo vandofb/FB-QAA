@@ -14,3 +14,4 @@ Feature: FB Website
     Given I am on FB Website main page
     When I scroll down all the way
     Then I should be able to check all FB social media accounts
+

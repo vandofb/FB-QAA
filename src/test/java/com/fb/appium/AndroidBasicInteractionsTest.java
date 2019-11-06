@@ -6,7 +6,6 @@ import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -15,6 +14,8 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.IOException;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 public class AndroidBasicInteractionsTest extends BaseTest {
     private AndroidDriver<WebElement> driver;
@@ -47,7 +48,7 @@ public class AndroidBasicInteractionsTest extends BaseTest {
         AndroidElement onSearchRequestedBtn = (AndroidElement) driver.findElementById("btn_start_search");
         onSearchRequestedBtn.click();
         AndroidElement searchText = (AndroidElement) new WebDriverWait(driver, 30)
-                .until(ExpectedConditions.visibilityOfElementLocated(By.id("android:id/search_src_text")));
+                .until(visibilityOfElementLocated(By.id("android:id/search_src_text")));
         String searchTextValue = searchText.getText();
         Assert.assertEquals(searchTextValue, "Hello world!");
     }

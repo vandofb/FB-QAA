@@ -1,6 +1,5 @@
 package com.fb;
 
-import com.fb.Page;
 import io.cucumber.java.en.Given;
 
 public class StepDefinitions {
@@ -10,3 +9,4 @@ public class StepDefinitions {
         page.set(1);
     }
 }
+
